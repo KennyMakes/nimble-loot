@@ -1,0 +1,282 @@
+{
+  "folder": "AUhirGqMsKquNe9x",
+  "name": "Mechanical-Strong",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "<p>Strong mechanical trap consequences. Any condition can be removed with effort.</p>",
+  "results": [
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "_id": "6e55079f67924af0",
+      "name": "DEX Save",
+      "img": "icons/environment/traps/saw-steel.webp",
+      "description": "<p>A loaded blade fan erupts from the strongbox seams. The opener takes [[/r 2d8+10]]{strong slashing damage} and must make a DC 14 DEX save or be knocked Prone.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "nimble",
+        "systemVersion": "0.8.3",
+        "lastModifiedBy": "LNtScW6WZFEccgXd",
+        "modifiedTime": 1778801412840
+      },
+      "documentUuid": "Macro.xLpSvDPbayJz2DKh"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "_id": "45a4c315a5fe4214",
+      "name": "STR Save",
+      "img": "icons/environment/traps/trap-jaw-steel.webp",
+      "description": "<p>A brutal iron jaw or crushing clamp snaps shut around the opener. The opener takes [[/r 2d8+10]]{strong bludgeoning damage} and must make a DC 14 STR save or become Grappled until freed.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "nimble",
+        "systemVersion": "0.8.3",
+        "lastModifiedBy": "LNtScW6WZFEccgXd",
+        "modifiedTime": 1778801394129
+      },
+      "documentUuid": "Macro.jy8ZqnKgpqQrzLfd"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "_id": "4b59c73591694533",
+      "name": "DEX Save",
+      "img": "icons/skills/ranged/dart-thrown-poison-green.webp",
+      "description": "<p>A storm of concealed darts fires in a tight burst. The opener takes [[/r 2d8+10]]{strong piercing damage} and must make a DC 14 DEX save or also become Dazed for 10 minutes.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "nimble",
+        "systemVersion": "0.8.3",
+        "lastModifiedBy": "LNtScW6WZFEccgXd",
+        "modifiedTime": 1778801473407
+      },
+      "documentUuid": "Macro.xLpSvDPbayJz2DKh"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "_id": "4dd18cc34f094b3e",
+      "name": "WIL Save",
+      "img": "icons/commodities/tech/smoke-spout-blue.webp",
+      "description": "<p>A reservoir of choking funeral dust explodes outward. No initial weapon damage. The opener and anyone adjacent must make a DC 14 WIL save or become Frightened and cough violently, suffering disadvantage on their next roll.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "nimble",
+        "systemVersion": "0.8.3",
+        "lastModifiedBy": "LNtScW6WZFEccgXd",
+        "modifiedTime": 1778801563806
+      },
+      "documentUuid": "Macro.6HORlkVw5NfAqP8C"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "_id": "48102ea77deb43f3",
+      "name": "Dropped Weight",
+      "img": "icons/commodities/stone/boulder-grey-blue.webp",
+      "description": "<p>A hidden counterweight crashes from above or behind the wall. The opener takes [[/r 2d8+10]]{strong bludgeoning damage} and nearby fragile objects may be smashed.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "nimble",
+        "systemVersion": "0.8.3",
+        "lastModifiedBy": "LNtScW6WZFEccgXd",
+        "modifiedTime": 1778801705815
+      },
+      "documentUuid": null
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "_id": "3bc810ff6f764f60",
+      "name": "Chain Snare",
+      "img": "icons/tools/fasteners/chain-hook-grey.webp",
+      "description": "<p>A barbed chain lashes out and anchors the opener in place. The opener takes [[/r 2d8+4]]{solid piercing damage} and is Restrained until they are cut loose or spend effort escaping.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "nimble",
+        "systemVersion": "0.8.3",
+        "lastModifiedBy": "LNtScW6WZFEccgXd",
+        "modifiedTime": 1778801783823
+      },
+      "documentUuid": null
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "_id": "74e73e931bc64e2a",
+      "name": "Howling Alarm",
+      "img": "icons/magic/sonic/scream-wail-shout-teal.webp",
+      "description": "<p>A vicious mechanical siren screams through the room or corridor. No direct damage. Nearby enemies are fully alerted, reinforcements may converge, and any chance of stealth is lost.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "nimble",
+        "systemVersion": "0.8.3",
+        "lastModifiedBy": "LNtScW6WZFEccgXd",
+        "modifiedTime": 1778801889887
+      },
+      "documentUuid": null
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "_id": "2258cbf62be5412a",
+      "name": "Razor Scatter",
+      "img": "icons/weapons/thrown/bomb-spiked-purple.webp",
+      "description": "<p>The box spits a burst of sharpened caltrops and razor shards across the area. The opener takes [[/r 2d8+4]]{solid slashing damage} and the nearest spaces become hazardous terrain until cleared.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "nimble",
+        "systemVersion": "0.8.3",
+        "lastModifiedBy": "LNtScW6WZFEccgXd",
+        "modifiedTime": 1778802070998
+      },
+      "documentUuid": null
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "_id": "580033a551bd4fd0",
+      "name": "Scarab Minions",
+      "img": "icons/creatures/invertebrates/beetle-stag-yellow-green.webp",
+      "description": "<p>A pack of [[/r 2d6+2]] furious scarab beetles tear free from the box’s binding runes. They immeadiately go after the opener.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "nimble",
+        "systemVersion": "0.8.3",
+        "lastModifiedBy": "LNtScW6WZFEccgXd",
+        "modifiedTime": 1778809127699
+      },
+      "documentUuid": "Compendium.nimble.nimble-monsters.Actor.34sqnNwhGhVQvZPD"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "_id": "ce576192abdc4c69",
+      "name": "Medium Mimic",
+      "img": "icons/containers/chest/chest-reinforced-steel-red.webp",
+      "description": "<p>A false inner shell unfolds into a murderous mechanical guardian or other brutal combat complication. It attacks immediately.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "nimble",
+        "systemVersion": "0.8.3",
+        "lastModifiedBy": "LNtScW6WZFEccgXd",
+        "modifiedTime": 1778802137838
+      },
+      "documentUuid": "Compendium.nimble.nimble-monsters.Actor.O4ATcECWPMYFbvbh"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": "RollTable.HnnTBbfIzzRVzU2l",
+    "exportSource": {
+      "worldId": "the-valley-of-hope",
+      "uuid": "RollTable.x0ymy3smyVcV398p",
+      "coreVersion": "13.351",
+      "systemId": "nimble",
+      "systemVersion": "0.8.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "nimble",
+    "systemVersion": "0.8.3",
+    "createdTime": 1776627705347,
+    "modifiedTime": 1779233483852,
+    "lastModifiedBy": "LNtScW6WZFEccgXd"
+  },
+  "formula": "1d10",
+  "ownership": {
+    "default": 0
+  }
+}

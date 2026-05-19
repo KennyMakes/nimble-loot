@@ -1,0 +1,282 @@
+{
+  "folder": "AUhirGqMsKquNe9x",
+  "name": "Mechanical-Solid",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "<p>Solid mechanical trap consequences. Any condition can be removed with effort.</p>",
+  "results": [
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "_id": "MsDIyppPyE3m8Gid",
+      "name": "DEX Save",
+      "img": "icons/weapons/crossbows/crossbow-golden-bolt.webp",
+      "description": "<p>A rack of barbed bolts fires from the lid seams. The opener takes [[/r 2d8+4]]{moderate piercing damage} and must make a DEX save or become Slowed for the next 10 minutes.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "nimble",
+        "systemVersion": "0.8.3",
+        "lastModifiedBy": "LNtScW6WZFEccgXd",
+        "modifiedTime": 1778799618782
+      },
+      "documentUuid": "Macro.xLpSvDPbayJz2DKh"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "_id": "k5VibHXB3cMajzuZ",
+      "name": "STR Save",
+      "img": "icons/commodities/materials/powder-grey.webp",
+      "description": "<p>An alchemical dust ampoule bursts from a hidden tube. The opener takes [[/r 1d6+3]]{light damage} and must make a DC 12 STR save or become Dazed for the next ten minutes.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "nimble",
+        "systemVersion": "0.8.3",
+        "lastModifiedBy": "LNtScW6WZFEccgXd",
+        "modifiedTime": 1778799738129
+      },
+      "documentUuid": "Macro.jy8ZqnKgpqQrzLfd"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "_id": "HwjFGMhByWQG8r7g",
+      "name": "STR Save",
+      "img": "icons/commodities/tech/metal-jaws.webp",
+      "description": "<p>A lockjaw clamp snaps over the opener’s wrist. The opener takes [[/r 2d8+4]]{moderate bludgeoning damage} and must make a DC 12 STR save or become Restrained until freed.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "nimble",
+        "systemVersion": "0.8.3",
+        "lastModifiedBy": "LNtScW6WZFEccgXd",
+        "modifiedTime": 1778800773478
+      },
+      "documentUuid": "Macro.jy8ZqnKgpqQrzLfd"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "_id": "iXCKccfyUQFvuDGS",
+      "name": "WIL Save",
+      "img": "icons/magic/sonic/scream-wail-shout-teal.webp",
+      "description": "<p>A shrieking wail screams from inside the mechanism. No damage. The opener must make a DC 12 WIL save or become Frightened for 10 minutes.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "nimble",
+        "systemVersion": "0.8.3",
+        "lastModifiedBy": "LNtScW6WZFEccgXd",
+        "modifiedTime": 1778799991342
+      },
+      "documentUuid": "Macro.6HORlkVw5NfAqP8C"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "_id": "XgKifJjW8NRllmww",
+      "name": "DEX Save",
+      "img": "icons/magic/control/debuff-energy-snare-blue.webp",
+      "description": "<p>A hidden snare cable yanks the opener off balance. No damage. The opener must make a DC 12 DEX save or be pulled [[/r 1d4]] spaces and knocked Prone.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "nimble",
+        "systemVersion": "0.8.3",
+        "lastModifiedBy": "LNtScW6WZFEccgXd",
+        "modifiedTime": 1778800078419
+      },
+      "documentUuid": "Macro.xLpSvDPbayJz2DKh"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "_id": "bHxy6QqCx0CPTBX2",
+      "name": "Acid Vial",
+      "img": "icons/consumables/potions/bottle-round-corked-green.webp",
+      "description": "<p>A glass vial shatters inside the lock housing and splashes the opener with acid. The opener takes [[/r 2d8+4]]{moderate acid damage}. The nearest space becomes hazardous.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "nimble",
+        "systemVersion": "0.8.3",
+        "lastModifiedBy": "LNtScW6WZFEccgXd",
+        "modifiedTime": 1778800143667
+      },
+      "documentUuid": null
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "_id": "NyE1EBUZaW9t8xdK",
+      "name": "DEX Save",
+      "img": "icons/commodities/tech/bearing-steel-green.webp",
+      "description": "<p>A false coin tray bursts into a spray of sharpened metal shards. The opener takes [[/r 2d8+4]]{moderate piercing damage} and must make a DC 12 DEX save or an adjacent ally also takes [[r/ 1d6+3]]{light piercing damage}.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "nimble",
+        "systemVersion": "0.8.3",
+        "lastModifiedBy": "LNtScW6WZFEccgXd",
+        "modifiedTime": 1778800339321
+      },
+      "documentUuid": "Macro.xLpSvDPbayJz2DKh"
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "_id": "1IqgjgCPUOPiLMbQ",
+      "name": "Ghoul",
+      "img": "icons/creatures/magical/spirit-undead-ghost-purple.webp",
+      "description": "<p>A hidden side compartment springs open and releases a starved ghoul. It reaches for the opener.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "nimble",
+        "systemVersion": "0.8.3",
+        "lastModifiedBy": "LNtScW6WZFEccgXd",
+        "modifiedTime": 1778800415956
+      },
+      "documentUuid": "Compendium.nimble.nimble-monsters.Actor.1sz3bC7wjQsmM0jX"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "_id": "cfqBcI3cI5QHeFdN",
+      "name": "Clockwork Vermin",
+      "img": "icons/creatures/mammals/rodent-rat-green.webp",
+      "description": "<p>A cluster of clockwork vermin (d6 minions) erupts from the false bottom and scuttles underfoot. This becomes a quick combat or chase complication.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "nimble",
+        "systemVersion": "0.8.3",
+        "lastModifiedBy": "LNtScW6WZFEccgXd",
+        "modifiedTime": 1778802222830
+      },
+      "documentUuid": null
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "_id": "TuvH3LIj7NkEh1bf",
+      "name": "STR Save",
+      "img": "icons/commodities/stone/rock-chunk-grey.webp",
+      "description": "<p>A deadfall weight slams down from the lid frame. The opener takes [[/r 2d8+10]]{heavy bludgeoning damage} and must make a DC 12 STR save or become Dazed for the next 10 minutes.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "nimble",
+        "systemVersion": "0.8.3",
+        "lastModifiedBy": "LNtScW6WZFEccgXd",
+        "modifiedTime": 1778802165374
+      },
+      "documentUuid": "Macro.jy8ZqnKgpqQrzLfd"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": "RollTable.yQZyPYrjU4P7771O",
+    "exportSource": {
+      "worldId": "the-valley-of-hope",
+      "uuid": "RollTable.HnnTBbfIzzRVzU2l",
+      "coreVersion": "13.351",
+      "systemId": "nimble",
+      "systemVersion": "0.8.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "nimble",
+    "systemVersion": "0.8.3",
+    "createdTime": 1776627702502,
+    "modifiedTime": 1779233506580,
+    "lastModifiedBy": "LNtScW6WZFEccgXd"
+  },
+  "formula": "1d10",
+  "ownership": {
+    "default": 0
+  }
+}

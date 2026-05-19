@@ -1,0 +1,282 @@
+{
+  "folder": "AUhirGqMsKquNe9x",
+  "name": "Mechanical-Weak",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "<p>Weak mechanical trap consequences. Any condition can be removed with effort.</p>",
+  "results": [
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "_id": "gITp7mOTdGB9DQUA",
+      "name": "STR Save",
+      "img": "icons/tools/fasteners/pin-spiked.webp",
+      "description": "<p>A hidden needle snaps from the lock plate. The opener takes [[/r 1d6+3]]{light piercing damage} and must make a DC 10 STR save or become Dazed for 10 min.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "nimble",
+        "systemVersion": "0.8.3",
+        "lastModifiedBy": "LNtScW6WZFEccgXd",
+        "modifiedTime": 1778763504181
+      },
+      "documentUuid": "Macro.jy8ZqnKgpqQrzLfd"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "_id": "msfnqlpWNlKFWhZ1",
+      "name": "Powder Burst",
+      "img": "icons/commodities/gems/powder-raw-white.webp",
+      "description": "<p>A spring packet of black dust bursts into the opener’s face. No damage. The opener is Blinded for 10 minutes.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "nimble",
+        "systemVersion": "0.8.3",
+        "lastModifiedBy": "LNtScW6WZFEccgXd",
+        "modifiedTime": 1778799411607
+      },
+      "documentUuid": null
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "_id": "jGsW2seiW8YLS1gN",
+      "name": "Alarm Bell",
+      "img": "icons/tools/instruments/bell-brass.webp",
+      "description": "<p>A concealed wire rings a tiny brass bell.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "nimble",
+        "systemVersion": "0.8.3",
+        "lastModifiedBy": "LNtScW6WZFEccgXd",
+        "modifiedTime": 1778798791698
+      },
+      "documentUuid": null
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "_id": "pCUDiTys4QAZW6b1",
+      "name": "Snapping Clamp",
+      "img": "icons/environment/traps/trap-jaw-green.webp",
+      "description": "<p>A small iron jaw clamps onto the opener’s hand or wrist. The opener takes [[/r 1d6+3]]{light bludgeoning damage} and has disadvantage on their next Finesse or Might check.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "nimble",
+        "systemVersion": "0.8.3",
+        "lastModifiedBy": "LNtScW6WZFEccgXd",
+        "modifiedTime": 1778764124533
+      },
+      "documentUuid": null
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "_id": "70LTXQsv0eOhQExB",
+      "name": "Flashfire Spark",
+      "img": "icons/magic/fire/projectile-needles-salvo-red.webp",
+      "description": "<p>A flint-wheel spits sparks into the opener’s face and clothes. The opener takes [[/r 1d6+3]]{light fire damage}.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "nimble",
+        "systemVersion": "0.8.3",
+        "lastModifiedBy": "LNtScW6WZFEccgXd",
+        "modifiedTime": 1778799460573
+      },
+      "documentUuid": null
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "_id": "vQYpAUuSVseTVv0O",
+      "name": "Tangled Wire",
+      "img": "icons/commodities/tech/wire-red.webp",
+      "description": "<p>A coil of razor-thin wire whips free and tangles the opener. No damage. The opener is Slowed for 10 minutes.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "nimble",
+        "systemVersion": "0.8.3",
+        "lastModifiedBy": "LNtScW6WZFEccgXd",
+        "modifiedTime": 1778799470258
+      },
+      "documentUuid": null
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "_id": "J5HoMaA1A8Dnacgz",
+      "name": "STR Save",
+      "img": "icons/weapons/thrown/dart-feathered.webp",
+      "description": "<p>A weak dart fires from the box side. The opener takes [[/r 1d6+3]]{light piercing damage} and must make a DC 10 STR save or suffer disadvantage on their next roll.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "nimble",
+        "systemVersion": "0.8.3",
+        "lastModifiedBy": "LNtScW6WZFEccgXd",
+        "modifiedTime": 1778798871119
+      },
+      "documentUuid": "Macro.jy8ZqnKgpqQrzLfd"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "_id": "6gPXOFzlXMv7jYrS",
+      "name": "False Bottom Spill",
+      "img": "icons/tools/fasteners/nails-worn-steel.webp",
+      "description": "<p>A hidden compartment dumps nails, glass, and scrap across the floor. No direct damage. The nearest 1–2 spaces become difficult terrain until cleared.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "nimble",
+        "systemVersion": "0.8.3",
+        "lastModifiedBy": "LNtScW6WZFEccgXd",
+        "modifiedTime": 1778798922370
+      },
+      "documentUuid": null
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "_id": "amfmI6g3Z8SKMxT0",
+      "name": "Ink Bladder",
+      "img": "icons/creatures/slimes/slime-movement-swirling-blue.webp",
+      "description": "<p>A bladder of dark alchemical ink bursts over the opener’s hands, gear, and face. No damage. The opener is obviously stained until they clean up.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "nimble",
+        "systemVersion": "0.8.3",
+        "lastModifiedBy": "LNtScW6WZFEccgXd",
+        "modifiedTime": 1778799249486
+      },
+      "documentUuid": null
+    },
+    {
+      "type": "document",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "_id": "Rl5Qm2qqpPFDy8IO",
+      "name": "Tiny Mimic",
+      "img": "icons/containers/chest/chest-worn-oak-tan.webp",
+      "description": "<p>The latch or coin tray is a Tiny Mimic. It immediately snaps at the opener and becomes a quick combat complication.</p>",
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "nimble",
+        "systemVersion": "0.8.3",
+        "lastModifiedBy": "LNtScW6WZFEccgXd",
+        "modifiedTime": 1776660559209
+      },
+      "documentUuid": "Compendium.nimble.nimble-monsters.Actor.S99BhlhkUDfuJrdj"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": "RollTable.yQZyPYrjU4P7771O",
+    "exportSource": {
+      "worldId": "the-valley-of-hope",
+      "uuid": "RollTable.KDbcy3LyV21Z5XBt",
+      "coreVersion": "13.351",
+      "systemId": "nimble",
+      "systemVersion": "0.8.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "nimble",
+    "systemVersion": "0.8.3",
+    "createdTime": 1776628623208,
+    "modifiedTime": 1778799356243,
+    "lastModifiedBy": "LNtScW6WZFEccgXd"
+  },
+  "formula": "1d10",
+  "ownership": {
+    "default": 0
+  }
+}
