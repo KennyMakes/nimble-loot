@@ -21,6 +21,7 @@ The module is intentionally **not** a full recreation of Item Piles. It is small
 ## Core Profiles
 
 ### Loot Pile
+<img width="517" height="523" alt="image" src="https://github.com/user-attachments/assets/7ab16fc2-0a26-4cd3-a431-3af19fc50f63" />
 
 Loose treasure, dropped gear, corpses, sacks, battlefield loot, or anything that should disappear once emptied.
 
@@ -29,6 +30,7 @@ Loose treasure, dropped gear, corpses, sacks, battlefield loot, or anything that
 - Empty loot-pile tokens delete themselves from the canvas.
 
 ### Container - List
+<img width="576" height="704" alt="image" src="https://github.com/user-attachments/assets/90e1f66c-0b1c-472b-9184-4fbb7d7701fc" />
 
 A reusable container shown as a clean list.
 
@@ -37,6 +39,7 @@ A reusable container shown as a clean list.
 - Players and GMs can add new items or currency later.
 
 ### Container - Grid
+<img width="439" height="648" alt="image" src="https://github.com/user-attachments/assets/a43f6400-4632-47c8-b873-1e8a12402751" />
 
 A reusable slotted container shown as a tile grid.
 
