@@ -1,0 +1,37 @@
+{
+  "id": "nimble-loot",
+  "title": "Nimble Loot",
+  "description": "Dialog-first loot piles, containers, strongboxes, and vaults for Nimble in Foundry VTT v13.",
+  "version": "0.2.1",
+  "authors": [
+    {
+      "name": "KennyMakes"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13",
+    "maximum": "13"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "nimble",
+        "type": "system",
+        "compatibility": {
+          "minimum": "0.7.0"
+        }
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/init.js"
+  ],
+  "styles": [
+    "styles/nimble-loot.css"
+  ],
+  "url": "https://github.com/KennyMakes/nimble-shop",
+  "manifest": "https://github.com/KennyMakes/nimble-loot/releases/latest/download/module.json",
+  "download": "https://github.com/KennyMakes/nimble-loot/releases/download/v0.2.1/nimble-loot-v0.2.1.zip",
+  "socket": true
+}

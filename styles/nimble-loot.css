@@ -1,0 +1,2155 @@
+.nimble-loot-app {
+  --nimble-loot-bg: rgba(22, 18, 14, 0.94);
+  --nimble-loot-panel: rgba(255, 255, 255, 0.045);
+  --nimble-loot-panel-strong: rgba(255, 255, 255, 0.075);
+  --nimble-loot-border: rgba(255, 255, 255, 0.16);
+  --nimble-loot-text: #f1e7d1;
+  --nimble-loot-muted: rgba(241, 231, 209, 0.72);
+  --nimble-loot-accent: #d7aa5d;
+  --nimble-loot-danger: #b85d4d;
+  color: var(--nimble-loot-text);
+}
+
+.nimble-loot-window,
+.nimble-loot-config-window {
+  background: var(--nimble-loot-bg);
+}
+
+.nimble-loot-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0.75rem;
+}
+
+.nimble-loot-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.75rem;
+  border: 1px solid var(--nimble-loot-border);
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(215, 170, 93, 0.10), rgba(255, 255, 255, 0.035));
+}
+
+.nimble-loot-header h2 {
+  margin: 0;
+  font-size: 1.35rem;
+  color: var(--nimble-loot-text);
+}
+
+.nimble-loot-subtitle,
+.nimble-loot-muted {
+  color: var(--nimble-loot-muted);
+  font-size: 0.9rem;
+}
+
+.nimble-loot-badge-stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.35rem;
+}
+
+.nimble-loot-badge,
+.nimble-loot-currency-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.55rem;
+  border: 1px solid var(--nimble-loot-border);
+  border-radius: 999px;
+  background: var(--nimble-loot-panel-strong);
+  white-space: nowrap;
+}
+
+.nimble-loot-badge--trap {
+  border-color: rgba(215, 170, 93, 0.45);
+}
+
+.nimble-loot-description,
+.nimble-loot-section,
+.nimble-loot-actions-card,
+.nimble-loot-config-section,
+.nimble-loot-empty {
+  padding: 0.75rem;
+  border: 1px solid var(--nimble-loot-border);
+  border-radius: 10px;
+  background: var(--nimble-loot-panel);
+}
+
+.nimble-loot-empty {
+  text-align: center;
+  color: var(--nimble-loot-muted);
+}
+
+.nimble-loot-empty i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--nimble-loot-accent);
+}
+
+.nimble-loot-section-title,
+.nimble-loot-config-section h3 {
+  margin: 0 0 0.55rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--nimble-loot-accent);
+  letter-spacing: 0.02em;
+}
+
+.nimble-loot-trap-card h4 {
+  margin: 0 0 0.45rem 0;
+  color: var(--nimble-loot-text);
+}
+
+.nimble-loot-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.nimble-loot-item-row {
+  display: grid;
+  grid-template-columns: 44px 1fr auto;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.55rem;
+  border: 1px solid var(--nimble-loot-border);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.16);
+}
+
+.nimble-loot-item-row img {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.nimble-loot-item-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.nimble-loot-item-main p {
+  margin: 0.15rem 0 0 0;
+  color: var(--nimble-loot-muted);
+  font-size: 0.82rem;
+}
+
+.nimble-loot-item-actions,
+.nimble-loot-actions,
+.nimble-loot-footer,
+.nimble-loot-currency-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-items: center;
+}
+
+.nimble-loot-currency-row {
+  justify-content: space-between;
+}
+
+.nimble-loot-footer--right {
+  justify-content: flex-end;
+}
+
+.nimble-loot-app button {
+  border-radius: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--nimble-loot-text);
+  padding: 0.35rem 0.65rem;
+}
+
+.nimble-loot-app button:hover,
+.nimble-loot-app button:focus {
+  box-shadow: 0 0 0 1px var(--nimble-loot-accent);
+  background: rgba(215, 170, 93, 0.18);
+}
+
+.nimble-loot-app button:disabled {
+  opacity: 0.55;
+  cursor: wait;
+}
+
+.nimble-loot-primary {
+  background: rgba(215, 170, 93, 0.28) !important;
+  border-color: rgba(215, 170, 93, 0.65) !important;
+}
+
+.nimble-loot-danger {
+  background: rgba(184, 93, 77, 0.25) !important;
+  border-color: rgba(184, 93, 77, 0.65) !important;
+}
+
+.nimble-loot-grid {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.nimble-loot-grid.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.nimble-loot-grid.four {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.nimble-loot-trap-config {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.nimble-loot-trap-card {
+  padding: 0.65rem;
+  border: 1px solid var(--nimble-loot-border);
+  border-radius: 9px;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.nimble-loot-checkbox-row,
+.nimble-loot-checkbox-column {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 0.9rem;
+  margin: 0.55rem 0;
+}
+
+.nimble-loot-checkbox-column {
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.nimble-loot-app label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  color: var(--nimble-loot-muted);
+  font-size: 0.86rem;
+}
+
+.nimble-loot-app label:has(input[type="checkbox"]) {
+  flex-direction: row;
+  align-items: center;
+  color: var(--nimble-loot-text);
+}
+
+.nimble-loot-app input,
+.nimble-loot-app select,
+.nimble-loot-app textarea {
+  border-radius: 6px;
+}
+
+.nimble-loot-chat-card,
+.nimble-loot-roll-card {
+  border-left: 3px solid #d7aa5d;
+  padding-left: 0.5rem;
+}
+
+
+@media (max-width: 760px) {
+  .nimble-loot-grid.two,
+  .nimble-loot-grid.four,
+  .nimble-loot-trap-config {
+    grid-template-columns: 1fr;
+  }
+
+  .nimble-loot-header,
+  .nimble-loot-item-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* v0.1.1: keep long GM configuration forms usable inside the Foundry/Nimble window frame. */
+.nimble-loot-config-form.nimble-loot-panel {
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nimble-loot-config-scroll {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  box-sizing: border-box;
+}
+
+.nimble-loot-config .window-content,
+.nimble-loot-config-window {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.nimble-loot-config .nimble-loot-footer {
+  flex: 0 0 auto;
+  padding: 0.75rem;
+  border-top: 1px solid var(--nimble-loot-border);
+  background: color-mix(in srgb, var(--nimble-loot-bg) 88%, transparent);
+}
+
+.nimble-loot-save-status {
+  align-self: center;
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin-right: 0.75rem;
+}
+
+.nimble-loot-save-status[data-state="dirty"] {
+  opacity: 1;
+  font-weight: 700;
+}
+
+.nimble-loot-save-status[data-state="saved"] {
+  opacity: 1;
+  font-weight: 700;
+}
+
+.nimble-loot-save-status[data-state="saving"] {
+  opacity: 1;
+  font-style: italic;
+}
+
+/* v0.1.3: keep player loot windows usable when a pile has many items. */
+.nimble-loot-dialog .window-content,
+.nimble-loot-window {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.nimble-loot-dialog form.nimble-loot-panel {
+  height: 100%;
+  min-height: 0;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+  box-sizing: border-box;
+}
+
+.nimble-loot-grid.three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.nimble-loot-item-main span {
+  color: var(--nimble-loot-muted);
+  font-size: 0.86rem;
+}
+
+@media (max-width: 760px) {
+  .nimble-loot-grid.three {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* v0.1.8: currency controls */
+.nimble-loot-currency-pills,
+.nimble-loot-currency-actions,
+.nimble-loot-currency-portion {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-items: center;
+}
+
+.nimble-loot-currency-pills {
+  margin-bottom: 0.5rem;
+}
+
+.nimble-loot-currency-actions {
+  margin-bottom: 0.5rem;
+}
+
+.nimble-loot-currency-pill {
+  min-width: 5.5rem;
+  justify-content: center;
+}
+
+.nimble-loot-currency-pill--empty {
+  opacity: 0.55;
+}
+
+.nimble-loot-currency-portion {
+  padding-top: 0.45rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.nimble-loot-currency-portion label {
+  width: 5.5rem;
+}
+
+.nimble-loot-currency-portion input[type="number"] {
+  width: 100%;
+}
+
+/* v0.1.9: simplified GM config layout */
+.nimble-loot-identity-grid,
+.nimble-loot-access-grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1.35fr 1.35fr;
+  gap: 0.5rem;
+  align-items: end;
+}
+
+.nimble-loot-identity-grid .span-2,
+.nimble-loot-access-grid .span-2 {
+  grid-column: span 2;
+}
+
+.nimble-loot-identity-grid .span-full,
+.nimble-loot-access-grid .span-full {
+  grid-column: 1 / -1;
+}
+
+.nimble-loot-inline-actions {
+  display: flex;
+  align-items: end;
+  gap: 0.45rem;
+  padding-top: 1.15rem;
+}
+
+.nimble-loot-config-items {
+  margin-top: 0.65rem;
+  padding: 0.65rem;
+  border: 1px dashed rgba(215, 170, 93, 0.42);
+  border-radius: 9px;
+  background: rgba(0, 0, 0, 0.13);
+}
+
+.nimble-loot-drop-hint {
+  margin-bottom: 0.55rem;
+  color: var(--nimble-loot-muted);
+  font-size: 0.86rem;
+}
+
+.nimble-loot-config-item-row {
+  display: grid;
+  grid-template-columns: 36px 1fr 7rem auto auto;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.45rem;
+  border: 1px solid var(--nimble-loot-border);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.16);
+  margin-bottom: 0.45rem;
+}
+
+.nimble-loot-config-item-row img {
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.nimble-loot-trap-topline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 0.55rem;
+}
+
+.nimble-loot-trap-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.25fr;
+  gap: 0.65rem;
+}
+
+.nimble-loot-trigger-box {
+  padding: 0.55rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.13);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.nimble-loot-mini-title {
+  color: var(--nimble-loot-accent);
+  font-weight: 700;
+}
+
+.nimble-loot-trap-fields {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.45rem;
+}
+
+.nimble-loot-item-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(74px, 1fr));
+  gap: 0.55rem;
+}
+
+.nimble-loot-item-tile {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border: 1px solid var(--nimble-loot-border);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+}
+
+.nimble-loot-item-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.nimble-loot-item-qty {
+  position: absolute;
+  right: 0.25rem;
+  bottom: 0.25rem;
+  min-width: 1.45rem;
+  text-align: center;
+  padding: 0.1rem 0.25rem;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.76);
+  color: var(--nimble-loot-text);
+  font-weight: 700;
+  font-size: 0.82rem;
+}
+
+.nimble-loot-item-tile-actions {
+  position: absolute;
+  left: 0.25rem;
+  right: 0.25rem;
+  top: 0.25rem;
+  display: none;
+  gap: 0.25rem;
+  justify-content: center;
+}
+
+.nimble-loot-item-tile:hover .nimble-loot-item-tile-actions,
+.nimble-loot-item-tile:focus-within .nimble-loot-item-tile-actions {
+  display: flex;
+}
+
+.nimble-loot-item-tile-actions button {
+  padding: 0.18rem 0.35rem;
+  font-size: 0.78rem;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 900px) {
+  .nimble-loot-identity-grid,
+  .nimble-loot-access-grid,
+  .nimble-loot-trap-config,
+  .nimble-loot-trap-grid,
+  .nimble-loot-config-item-row {
+    grid-template-columns: 1fr;
+  }
+
+  .nimble-loot-identity-grid .span-2,
+  .nimble-loot-access-grid .span-2,
+  .nimble-loot-identity-grid .span-full,
+  .nimble-loot-access-grid .span-full {
+    grid-column: auto;
+  }
+}
+
+/* v0.1.10: tabbed config and compact GM layout */
+.nimble-loot-config-tabs {
+  display: flex;
+  gap: 0.35rem;
+  padding: 0.65rem 0.75rem 0 0.75rem;
+  border-bottom: 1px solid var(--nimble-loot-border);
+  background: rgba(0, 0, 0, 0.16);
+}
+
+.nimble-loot-tab-button {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  opacity: 0.78;
+}
+
+.nimble-loot-tab-button.active {
+  opacity: 1;
+  background: rgba(215, 170, 93, 0.24) !important;
+  border-color: rgba(215, 170, 93, 0.58) !important;
+}
+
+.nimble-loot-tab-panel {
+  display: none;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.nimble-loot-tab-panel.active {
+  display: flex;
+}
+
+.nimble-loot-identity-grid-v2 {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-areas:
+    "name description"
+    "type description"
+    "toggles description";
+  gap: 0.55rem 0.75rem;
+  align-items: stretch;
+}
+
+.nimble-loot-identity-grid-v2 .identity-name { grid-area: name; }
+.nimble-loot-identity-grid-v2 .identity-type { grid-area: type; }
+.nimble-loot-identity-grid-v2 .identity-description { grid-area: description; }
+.nimble-loot-identity-grid-v2 .identity-toggles { grid-area: toggles; }
+.nimble-loot-identity-grid-v2 .identity-description textarea { min-height: 100%; resize: vertical; }
+
+.nimble-loot-toggle-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.85rem;
+  align-items: center;
+  align-self: end;
+}
+
+.nimble-loot-access-grid-v2 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.55rem 0.75rem;
+  align-items: end;
+}
+
+.nimble-loot-readonly-field {
+  min-height: 3.15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2rem;
+  padding: 0.45rem 0.55rem;
+  border: 1px solid var(--nimble-loot-border);
+  border-radius: 7px;
+  background: rgba(0, 0, 0, 0.13);
+}
+
+.nimble-loot-readonly-field span {
+  color: var(--nimble-loot-muted);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.nimble-loot-readonly-field strong {
+  color: var(--nimble-loot-text);
+  font-weight: 700;
+}
+
+.nimble-loot-config-item-row-v2 {
+  grid-template-columns: 36px minmax(0, 1fr) auto 2.35rem 2.35rem;
+}
+
+.nimble-loot-qty-inline {
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 0.35rem !important;
+  white-space: nowrap;
+}
+
+.nimble-loot-qty-inline input[type="number"] {
+  width: 4.25rem;
+  min-width: 4.25rem;
+}
+
+.nimble-loot-config-item-row-v2 button {
+  width: 2.35rem;
+  height: 2.15rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+}
+
+.nimble-loot-trap-toggles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 0.55rem;
+}
+
+.nimble-loot-footer--split {
+  justify-content: space-between;
+}
+
+.nimble-loot-footer-left,
+.nimble-loot-footer-right {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+@media (max-width: 900px) {
+  .nimble-loot-identity-grid-v2 {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "name"
+      "type"
+      "description"
+      "toggles";
+  }
+
+  .nimble-loot-access-grid-v2,
+  .nimble-loot-config-item-row-v2 {
+    grid-template-columns: 1fr;
+  }
+
+  .nimble-loot-config-item-row-v2 button {
+    width: auto;
+  }
+
+  .nimble-loot-footer--split {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
+
+/* v0.1.11: setup polish and trap pages */
+.nimble-loot-identity-grid-v3 {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-areas:
+    "name description"
+    "type description"
+    "toggles toggles";
+  gap: 0.55rem 0.75rem;
+  align-items: end;
+}
+
+.nimble-loot-identity-grid-v3 .identity-name { grid-area: name; }
+.nimble-loot-identity-grid-v3 .identity-type { grid-area: type; }
+.nimble-loot-identity-grid-v3 .identity-description { grid-area: description; align-self: stretch; }
+.nimble-loot-identity-grid-v3 .identity-toggles { grid-area: toggles; }
+.nimble-loot-identity-grid-v3 .identity-description textarea {
+  min-height: 4.2rem;
+  max-height: 5.2rem;
+  resize: vertical;
+}
+
+.nimble-loot-access-grid-v3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.55rem 0.75rem;
+  align-items: end;
+}
+
+.nimble-loot-access-grid-v3 label:has(input[type="checkbox"]) {
+  min-height: 2.35rem;
+  align-items: center;
+}
+
+.nimble-loot-access-grid-v3 input[name="keyCode"] {
+  height: 2.15rem;
+  min-height: 2.15rem;
+}
+
+.nimble-loot-trap-card-full {
+  max-width: 720px;
+}
+
+.nimble-loot-trap-page-grid {
+  display: grid;
+  grid-template-columns: minmax(10rem, 0.8fr) minmax(0, 1.4fr);
+  gap: 0.75rem;
+  align-items: start;
+}
+
+.nimble-loot-trap-fields-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem 0.75rem;
+}
+
+.nimble-loot-trap-fields-grid .span-2 {
+  grid-column: span 2;
+}
+
+@media (max-width: 900px) {
+  .nimble-loot-identity-grid-v3,
+  .nimble-loot-access-grid-v3,
+  .nimble-loot-trap-page-grid,
+  .nimble-loot-trap-fields-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: none;
+  }
+
+  .nimble-loot-identity-grid-v3 .identity-name,
+  .nimble-loot-identity-grid-v3 .identity-type,
+  .nimble-loot-identity-grid-v3 .identity-description,
+  .nimble-loot-identity-grid-v3 .identity-toggles,
+  .nimble-loot-trap-fields-grid .span-2 {
+    grid-area: auto;
+    grid-column: auto;
+  }
+}
+
+.nimble-loot-identity-layout textarea { min-height: 4.2rem; max-height: 5.2rem; resize: vertical; }
+
+
+/* v0.1.13: final config cleanup */
+.nimble-loot-trap-toggles {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem 1rem;
+}
+.nimble-loot-access-grid-v3 .access-locked,
+.nimble-loot-access-grid-v3 .access-allow-disarm {
+  min-height: 2.35rem;
+  align-items: center;
+}
+
+/* v0.1.14: player closed-container interaction redesign */
+.nimble-loot-player-panel {
+  gap: 0.75rem;
+}
+
+.nimble-loot-interaction-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.nimble-loot-interaction-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: end;
+}
+
+.nimble-loot-bonus-field {
+  width: 5.5rem;
+  min-width: 5.5rem;
+}
+
+.nimble-loot-bonus-field input[type="number"] {
+  width: 100%;
+}
+
+.nimble-loot-status-log {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.16);
+}
+
+.nimble-loot-status-line {
+  color: var(--nimble-loot-text);
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.nimble-loot-status-line--empty {
+  color: var(--nimble-loot-muted);
+  font-style: italic;
+}
+
+/* v0.1.15: open-container polish */
+.nimble-loot-small-note {
+  margin: 0.45rem 0 0 0;
+  font-size: 0.82rem;
+}
+
+.nimble-loot-section[data-drop-zone="player-items"] {
+  transition: border-color 120ms ease, background 120ms ease;
+}
+
+.nimble-loot-section[data-drop-zone="player-items"].nimble-loot-drop-active {
+  border-color: rgba(215, 170, 93, 0.75);
+  background: rgba(215, 170, 93, 0.08);
+}
+
+.nimble-loot-take-x-label {
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 0.35rem !important;
+  width: auto;
+}
+
+.nimble-loot-take-x-label input[type="number"],
+.nimble-loot-take-x-input {
+  width: 4.25rem;
+  min-width: 4.25rem;
+}
+
+.nimble-loot-item-actions {
+  justify-content: flex-end;
+}
+
+.nimble-loot-item-tile-actions {
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nimble-loot-item-tile-actions .nimble-loot-take-x-input {
+  height: 1.65rem;
+  padding: 0.05rem 0.25rem;
+  background: rgba(0, 0, 0, 0.72);
+}
+
+.nimble-loot-quantity-dialog input[type="number"] {
+  width: 5rem;
+  max-width: 5rem;
+  min-width: 5rem;
+  display: block;
+}
+
+/* v0.1.16: config tab bar actor-sheet action */
+.nimble-loot-config-tabs {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.nimble-loot-config-tab-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.nimble-loot-actor-sheet-button {
+  margin-left: auto;
+  margin-bottom: 0.25rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .nimble-loot-config-tabs {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .nimble-loot-actor-sheet-button {
+    align-self: flex-start;
+    margin-left: 0;
+  }
+}
+
+.nimble-loot-identity-grid-v3 {
+  grid-template-areas:
+    "name description"
+    "type description"
+    "grid description"
+    "toggles toggles";
+}
+
+.nimble-loot-identity-grid-v3 .identity-grid-options {
+  grid-area: grid;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.nimble-loot-static-grid {
+  grid-auto-rows: 84px;
+}
+
+.nimble-loot-grid-slot {
+  min-height: 84px;
+  border: 1px dashed rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.14);
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  overflow: hidden;
+}
+
+.nimble-loot-grid-slot.nimble-loot-drop-active {
+  border-color: rgba(215, 170, 93, 0.85);
+  background: rgba(215, 170, 93, 0.10);
+}
+
+.nimble-loot-empty-slot {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  color: rgba(255, 255, 255, 0.28);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.nimble-loot-grid-slot .nimble-loot-item-tile {
+  width: 100%;
+  min-height: 100%;
+  cursor: grab;
+}
+
+.nimble-loot-grid-slot .nimble-loot-item-tile:active {
+  cursor: grabbing;
+}
+
+/* v0.1.22: grid polish and native-ish token highlight */
+.nimble-loot-item-grid.nimble-loot-static-grid {
+  justify-content: start;
+  align-content: start;
+  grid-auto-rows: 64px;
+  grid-auto-columns: 64px;
+}
+
+.nimble-loot-static-grid {
+  grid-auto-rows: 64px;
+}
+
+.nimble-loot-grid-slot {
+  width: 64px;
+  height: 64px;
+  min-height: 64px;
+}
+
+.nimble-loot-grid-slot .nimble-loot-item-tile,
+.nimble-loot-grid-take-tile {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  background: rgba(0, 0, 0, 0.18);
+  cursor: grab;
+}
+
+.nimble-loot-grid-take-tile:active {
+  cursor: grabbing;
+}
+
+.nimble-loot-grid-take-tile:hover,
+.nimble-loot-grid-take-tile:focus {
+  outline: 2px solid rgba(215, 170, 93, 0.75);
+  outline-offset: -2px;
+}
+
+.nimble-loot-grid-slot .nimble-loot-item-tile img,
+.nimble-loot-grid-take-tile img {
+  pointer-events: none;
+}
+
+.nimble-loot-item-row[data-loot-drag-item-id] {
+  cursor: grab;
+}
+
+.nimble-loot-item-row[data-loot-drag-item-id]:active {
+  cursor: grabbing;
+}
+
+.nimble-loot-item-tile-actions {
+  display: none !important;
+}
+
+/* v0.1.25: stronger player-dialog scrolling and smooth custom border polish */
+.nimble-loot-dialog .window-content,
+.nimble-loot-dialog .window-content > section,
+.nimble-loot-window {
+  min-height: 0 !important;
+  overflow: hidden !important;
+}
+
+.nimble-loot-dialog .nimble-loot-player-panel,
+.nimble-loot-player-panel.nimble-loot-panel {
+  height: 100%;
+  max-height: 100%;
+  min-height: 0;
+  overflow-y: auto !important;
+  overflow-x: hidden;
+  scrollbar-gutter: stable;
+  box-sizing: border-box;
+}
+
+/* v0.1.26: player list scrolling, compact dialogs, inventory-add polish */
+.nimble-loot-dialog {
+  max-height: calc(100vh - 70px) !important;
+}
+
+.nimble-loot-dialog .window-content,
+.nimble-loot-dialog .window-content > section,
+.nimble-loot-dialog .window-content > div {
+  min-height: 0 !important;
+  overflow: hidden !important;
+}
+
+.nimble-loot-dialog form.nimble-loot-player-panel,
+.nimble-loot-dialog .nimble-loot-player-panel.nimble-loot-panel {
+  max-height: calc(100vh - 120px) !important;
+  overflow-y: scroll !important;
+  overflow-x: hidden !important;
+  scrollbar-gutter: stable both-edges;
+}
+
+.nimble-loot-section-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.nimble-loot-section-title-row button {
+  font-size: 0.85rem;
+  padding: 0.28rem 0.55rem;
+}
+
+.nimble-loot-quantity-dialog input[name="quantity"],
+.nimble-loot-inventory-add-dialog input[name="quantity"] {
+  width: 88px !important;
+  max-width: 88px !important;
+}
+
+.nimble-loot-inventory-add-dialog {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.nimble-loot-inventory-add-dialog label {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.nimble-loot-compact-number-label {
+  max-width: 110px;
+}
+
+
+/* v0.1.27: player list item-section scrolling and quicker close behavior */
+.nimble-loot-open-items-section {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  max-height: min(44vh, 420px);
+}
+
+.nimble-loot-open-items-section .nimble-loot-items-scroll {
+  flex: 1 1 auto;
+  min-height: 0;
+  max-height: min(34vh, 320px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 0.25rem;
+  scrollbar-gutter: stable;
+}
+
+.nimble-loot-open-items-section .nimble-loot-items,
+.nimble-loot-open-items-section .nimble-loot-item-grid {
+  min-height: 0;
+}
+
+.nimble-loot-closing {
+  opacity: 0.001;
+  pointer-events: none;
+}
+
+.nimble-loot-take-all-visible img {
+  width: 1.05em;
+  height: 1.05em;
+  vertical-align: -0.18em;
+  margin-right: 0.35rem;
+  filter: brightness(0) invert(1);
+}
+
+/* v0.1.37: align Nimble Loot with Nimble Shop visual language. */
+.nimble-loot-app,
+.nimble-loot-config {
+  --nimble-loot-bg: rgba(17, 12, 8, 0.94);
+  --nimble-loot-panel: rgba(39, 31, 44, 0.92);
+  --nimble-loot-panel-strong: rgba(39, 31, 44, 0.78);
+  --nimble-loot-border: rgba(255, 255, 255, 0.08);
+  --nimble-loot-border-strong: rgba(227, 203, 161, 0.35);
+  --nimble-loot-text: var(--color-text-light-highlight, #f1e8d5);
+  --nimble-loot-muted: rgba(241, 232, 213, 0.72);
+  --nimble-loot-accent: #e3cba1;
+  --nimble-loot-accent-soft: rgba(227, 203, 161, 0.10);
+  --nimble-loot-accent-active: rgba(227, 203, 161, 0.20);
+  --nimble-loot-input: rgba(0, 0, 0, 0.18);
+  --nimble-loot-danger: #b85d4d;
+  color: var(--nimble-loot-text);
+}
+
+.nimble-loot-window,
+.nimble-loot-config-window,
+.nimble-loot-dialog .window-content,
+.nimble-loot-config .window-content {
+  background: var(--nimble-loot-bg);
+  color: var(--nimble-loot-text);
+}
+
+.nimble-loot-svelte-player-panel,
+.nimble-loot-config-form.nimble-loot-panel {
+  padding: 0.75rem 1rem 1rem;
+  gap: 0.85rem;
+  box-sizing: border-box;
+}
+
+.nimble-loot-description,
+.nimble-loot-section,
+.nimble-loot-actions-card,
+.nimble-loot-config-section,
+.nimble-loot-empty {
+  border: 1px solid var(--nimble-loot-border);
+  border-radius: 14px;
+  background: var(--nimble-loot-panel);
+  padding: 0.75rem;
+}
+
+.nimble-loot-empty {
+  border-style: dashed;
+  border-color: rgba(227, 203, 161, 0.30);
+  background: rgba(255, 255, 255, 0.02);
+  color: rgba(241, 232, 213, 0.80);
+}
+
+.nimble-loot-section-title,
+.nimble-loot-config-section h3,
+.nimble-loot-mini-title {
+  color: var(--nimble-loot-accent);
+  font-weight: 700;
+}
+
+.nimble-loot-app button,
+.nimble-loot-config button,
+.nimble-loot-app select,
+.nimble-loot-config select,
+.nimble-loot-app input,
+.nimble-loot-config input,
+.nimble-loot-app textarea,
+.nimble-loot-config textarea {
+  color: inherit;
+}
+
+.nimble-loot-app input,
+.nimble-loot-config input,
+.nimble-loot-app select,
+.nimble-loot-config select,
+.nimble-loot-app textarea,
+.nimble-loot-config textarea {
+  background: var(--nimble-loot-input);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  padding: 0.42rem 0.55rem;
+  box-sizing: border-box;
+}
+
+.nimble-loot-app button,
+.nimble-loot-config button {
+  border-radius: 10px;
+  border: 1px solid rgba(227, 203, 161, 0.35);
+  background: rgba(227, 203, 161, 0.08);
+  color: var(--nimble-loot-text);
+  font-weight: 700;
+  transition: border-color .15s ease, background .15s ease, transform .15s ease, box-shadow .15s ease;
+}
+
+.nimble-loot-app button:hover,
+.nimble-loot-app button:focus,
+.nimble-loot-config button:hover,
+.nimble-loot-config button:focus {
+  border-color: rgba(227, 203, 161, 0.70);
+  background: rgba(227, 203, 161, 0.18);
+  box-shadow: 0 0 0 1px rgba(227, 203, 161, 0.12) inset;
+}
+
+.nimble-loot-app button:not(:disabled):active,
+.nimble-loot-config button:not(:disabled):active {
+  transform: translateY(1px);
+}
+
+.nimble-loot-primary {
+  background: rgba(227, 203, 161, 0.20) !important;
+  border-color: #e3cba1 !important;
+  box-shadow: 0 0 0 1px rgba(227, 203, 161, 0.12) inset;
+}
+
+.nimble-loot-danger,
+.nimble-loot-config button.nimble-loot-danger {
+  background: rgba(184, 93, 77, 0.18) !important;
+  border-color: rgba(184, 93, 77, 0.65) !important;
+}
+
+.nimble-loot-item-row,
+.nimble-loot-config-item-row {
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  transition: border-color .15s ease, transform .15s ease, background .15s ease;
+}
+
+.nimble-loot-item-row:hover,
+.nimble-loot-config-item-row:hover {
+  border-color: rgba(227, 203, 161, 0.45);
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-1px);
+}
+
+.nimble-loot-item-row img,
+.nimble-loot-config-item-row img,
+.nimble-loot-item-tile img {
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.28);
+}
+
+.nimble-loot-item-main strong,
+.nimble-loot-status-line strong {
+  color: var(--nimble-loot-text);
+}
+
+.nimble-loot-item-main span,
+.nimble-loot-small-note,
+.nimble-loot-drop-hint,
+.nimble-loot-muted {
+  color: var(--nimble-loot-muted);
+}
+
+.nimble-loot-status-log {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 0.55rem 0.7rem;
+}
+
+.nimble-loot-status-line {
+  color: rgba(241, 232, 213, 0.86);
+}
+
+.nimble-loot-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 0.5rem;
+}
+
+.nimble-loot-tab-button,
+.nimble-loot-tabs button,
+.nimble-loot-config [data-action="config-tab"],
+.nimble-loot-config [data-action="editor-tab"] {
+  padding: 0.55rem 0.85rem;
+  border-radius: 10px;
+  border: 1px solid rgba(227, 203, 161, 0.35);
+  background: rgba(227, 203, 161, 0.08);
+  font-weight: 700;
+}
+
+.nimble-loot-tab-button.active,
+.nimble-loot-tabs button.active,
+.nimble-loot-config [data-action="config-tab"].active,
+.nimble-loot-config [data-action="editor-tab"].active {
+  background: rgba(227, 203, 161, 0.20);
+  border-color: #e3cba1;
+  box-shadow: 0 0 0 1px rgba(227, 203, 161, 0.12) inset;
+}
+
+.nimble-loot-currency-pills {
+  gap: 0.5rem;
+}
+
+.nimble-loot-currency-pill {
+  min-height: 32px;
+  padding: 0.32rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-size: .82rem;
+  font-weight: 700;
+  opacity: 1;
+  filter: none;
+  box-shadow: none;
+  color: #111111 !important;
+  -webkit-text-fill-color: #111111 !important;
+}
+
+.nimble-loot-currency-pill i,
+.nimble-loot-currency-pill span {
+  color: inherit !important;
+  -webkit-text-fill-color: inherit !important;
+  opacity: 1;
+}
+
+.nimble-loot-currency-pill--gp {
+  border-color: rgba(253, 201, 117, 0.95) !important;
+  background: rgba(253, 201, 117, 0.92) !important;
+  box-shadow: 0 0 0 1px rgba(253, 201, 117, .18) inset;
+}
+
+.nimble-loot-currency-pill--sp {
+  border-color: rgba(188, 198, 204, 0.95) !important;
+  background: rgba(188, 198, 204, 0.92) !important;
+  box-shadow: 0 0 0 1px rgba(188, 198, 204, .18) inset;
+}
+
+.nimble-loot-currency-pill--cp {
+  border-color: rgba(205, 127, 87, 0.95) !important;
+  background: rgba(205, 127, 87, 0.92) !important;
+  box-shadow: 0 0 0 1px rgba(205, 127, 87, .18) inset;
+}
+
+.nimble-loot-currency-pill--empty {
+  opacity: 0.55;
+}
+
+.nimble-loot-currency-portion,
+.nimble-loot-action-box {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.nimble-loot-item-tile,
+.nimble-loot-grid-slot {
+  border-radius: 12px;
+}
+
+.nimble-loot-item-tile {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  transition: border-color .15s ease, transform .15s ease, background .15s ease;
+}
+
+.nimble-loot-item-tile:hover {
+  border-color: rgba(227, 203, 161, 0.45);
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-1px);
+}
+
+.nimble-loot-item-qty {
+  background: rgba(17, 12, 8, 0.86);
+  border: 1px solid rgba(227, 203, 161, 0.30);
+  color: var(--nimble-loot-text);
+}
+
+.nimble-loot-footer,
+.nimble-loot-config .nimble-loot-footer {
+  border-top-color: rgba(255, 255, 255, 0.08);
+}
+
+.nimble-loot-config-scroll {
+  padding: 0.75rem 1rem 1rem;
+}
+
+.nimble-loot-config fieldset,
+.nimble-loot-config-section fieldset,
+.nimble-loot-config-section {
+  border-radius: 14px;
+}
+
+
+/* v0.1.38: tighter Nimble Shop alignment cleanup. */
+.nimble-loot-config .nimble-loot-toggle-row label,
+.nimble-loot-config label:has(input[type="checkbox"]),
+.nimble-loot-dialog label:has(input[type="checkbox"]),
+.nimble-loot-app label:has(input[type="checkbox"]) {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+.nimble-loot-app input[type="checkbox"],
+.nimble-loot-config input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  min-height: 18px;
+  padding: 0 !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: rgba(39, 31, 44, 0.92);
+  accent-color: #f2a33b;
+}
+
+.nimble-loot-config .nimble-loot-inline-actions button {
+  min-width: 64px;
+  padding-inline: 0.75rem;
+  white-space: nowrap;
+}
+
+.nimble-loot-config .window-header .header-control,
+.nimble-loot-dialog .window-header .header-control,
+.nimble-loot-config .window-header button,
+.nimble-loot-dialog .window-header button,
+.window-app.nimble-loot-config .window-header .header-control,
+.window-app.nimble-loot-dialog .window-header .header-control,
+.application.nimble-loot-config .window-header .header-control,
+.application.nimble-loot-dialog .window-header .header-control {
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 0.25rem !important;
+  min-width: auto !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+.nimble-loot-config .window-header .header-control:hover,
+.nimble-loot-dialog .window-header .header-control:hover,
+.nimble-loot-config .window-header button:hover,
+.nimble-loot-dialog .window-header button:hover {
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #f1e8d5 !important;
+}
+
+.nimble-loot-config .window-header,
+.nimble-loot-dialog .window-header {
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.nimble-loot-tab-button,
+.nimble-loot-tabs button,
+.nimble-loot-config [data-action="config-tab"],
+.nimble-loot-config [data-action="editor-tab"] {
+  border-radius: 8px;
+  border-color: rgba(255,255,255,.12);
+  background: rgba(39,31,44,.92);
+}
+
+.nimble-loot-tab-button.active,
+.nimble-loot-tabs button.active,
+.nimble-loot-config [data-action="config-tab"].active,
+.nimble-loot-config [data-action="editor-tab"].active {
+  background: rgba(120,80,40,.35);
+  border-color: #f08a3c;
+  box-shadow: 0 0 0 1px rgba(240,138,60,.16) inset;
+}
+
+.nimble-loot-primary,
+.nimble-loot-app button.nimble-loot-primary,
+.nimble-loot-config button.nimble-loot-primary {
+  background: rgba(120,80,40,.35) !important;
+  border-color: #e3cba1 !important;
+}
+
+
+/* v0.1.41: Svelte bridge config scrolling and quick config layout cleanup. */
+.nimble-loot-config .window-content,
+.nimble-loot-config-window,
+.nimble-loot-svelte-config-root {
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.nimble-loot-svelte-config-root > .nimble-loot-config-form,
+.nimble-loot-config-form.nimble-loot-panel {
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.nimble-loot-config-tabs,
+.nimble-loot-config .nimble-loot-footer {
+  flex: 0 0 auto;
+}
+
+.nimble-loot-config-scroll {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-gutter: stable;
+}
+
+.nimble-loot-preset-section .nimble-loot-grid.three {
+  display: grid;
+  grid-template-columns: minmax(12rem, 1fr) minmax(12rem, 1fr) auto;
+  align-items: end;
+  gap: 0.55rem;
+}
+
+.nimble-loot-preset-section .nimble-loot-inline-actions {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: end;
+  justify-content: flex-start;
+  gap: 0.45rem;
+  min-width: max-content;
+}
+
+.nimble-loot-preset-section .nimble-loot-inline-actions button {
+  min-width: 4.25rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 820px) {
+  .nimble-loot-preset-section .nimble-loot-grid.three {
+    grid-template-columns: 1fr;
+  }
+  .nimble-loot-preset-section .nimble-loot-inline-actions {
+    min-width: 0;
+    flex-wrap: wrap;
+  }
+}
+
+/* v0.1.39+: DialogV2 cleanup and access layout refinements. */
+.nimble-loot-access-grid-v3 {
+  grid-template-columns: minmax(10rem, 0.9fr) minmax(0, 1fr) minmax(0, 1fr);
+  align-items: end;
+}
+
+.nimble-loot-access-grid-v3 .access-toggle-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  align-self: end;
+}
+
+.nimble-loot-access-grid-v3 .access-toggle-stack label {
+  min-height: 1.65rem;
+  margin: 0;
+}
+
+.nimble-loot-currency-portion .nimble-loot-currency-input-label {
+  gap: 0;
+}
+
+.nimble-loot-currency-portion .nimble-loot-currency-input-label input {
+  width: 100%;
+}
+
+.nimble-loot-dialogv2-form {
+  display: grid;
+  gap: 0.65rem;
+  padding: 0.35rem 0;
+}
+
+.nimble-loot-dialogv2-form input[type="number"] {
+  max-width: 7rem;
+}
+
+@media (max-width: 900px) {
+  .nimble-loot-access-grid-v3 .access-toggle-stack {
+    grid-column: auto;
+  }
+}
+
+/* v0.1.42: closer Nimble Shop editor visual alignment.
+   Shop editor uses transparent/dark window content, subtle fieldset panels, and purple inputs.
+   Keep the same hierarchy here: translucent window, subtle sections, stronger purple controls. */
+.nimble-loot-app,
+.nimble-loot-config {
+  --nimble-loot-bg: var(--color-cool-5-90, rgba(0, 0, 0, 0.85));
+  --nimble-loot-panel: rgba(255, 255, 255, 0.03);
+  --nimble-loot-panel-strong: rgba(255, 255, 255, 0.05);
+  --nimble-loot-input: rgba(39, 31, 44, 0.92);
+  --nimble-loot-border: rgba(255, 255, 255, 0.08);
+  --nimble-loot-border-strong: rgba(227, 203, 161, 0.32);
+  --nimble-loot-text: var(--color-text-light-highlight, #f1e8d5);
+  --nimble-loot-muted: rgba(241, 232, 213, 0.74);
+  --nimble-loot-accent: #e3cba1;
+  --nimble-loot-active: rgba(120, 80, 40, 0.35);
+  --nimble-loot-active-border: #f08a3c;
+}
+
+.nimble-loot-window,
+.nimble-loot-config-window,
+.nimble-loot-dialog .window-content,
+.nimble-loot-config .window-content {
+  background: rgba(0, 0, 0, 0.84) !important;
+  color: var(--nimble-loot-text) !important;
+}
+
+.nimble-loot-description,
+.nimble-loot-section,
+.nimble-loot-actions-card,
+.nimble-loot-config-section,
+.nimble-loot-empty,
+.nimble-loot-trap-card,
+.nimble-loot-trigger-box,
+.nimble-loot-status-log,
+.nimble-loot-config-items,
+.nimble-loot-grid-slot,
+.nimble-loot-item-tile,
+.nimble-loot-item-row,
+.nimble-loot-config-item-row {
+  background: var(--nimble-loot-panel) !important;
+  border-color: var(--nimble-loot-border-strong) !important;
+}
+
+.nimble-loot-config-section,
+.nimble-loot-section,
+.nimble-loot-description,
+.nimble-loot-empty {
+  border-radius: 14px;
+  box-shadow: none;
+}
+
+.nimble-loot-app label,
+.nimble-loot-config label {
+  color: rgba(241, 232, 213, 0.84) !important;
+  font-weight: 700;
+}
+
+.nimble-loot-section-title,
+.nimble-loot-config-section h3,
+.nimble-loot-mini-title {
+  color: var(--nimble-loot-accent) !important;
+}
+
+.nimble-loot-app input,
+.nimble-loot-config input,
+.nimble-loot-app select,
+.nimble-loot-config select,
+.nimble-loot-app textarea,
+.nimble-loot-config textarea {
+  background: var(--nimble-loot-input) !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+  color: var(--nimble-loot-text) !important;
+}
+
+.nimble-loot-app input:focus,
+.nimble-loot-config input:focus,
+.nimble-loot-app select:focus,
+.nimble-loot-config select:focus,
+.nimble-loot-app textarea:focus,
+.nimble-loot-config textarea:focus {
+  border-color: rgba(227, 203, 161, 0.50) !important;
+  box-shadow: 0 0 0 1px rgba(227, 203, 161, 0.10) inset !important;
+}
+
+.nimble-loot-app button,
+.nimble-loot-config button {
+  background: rgba(39, 31, 44, 0.92) !important;
+  border-color: rgba(227, 203, 161, 0.35) !important;
+  color: var(--nimble-loot-text) !important;
+}
+
+.nimble-loot-app button:hover,
+.nimble-loot-app button:focus,
+.nimble-loot-config button:hover,
+.nimble-loot-config button:focus {
+  background: rgba(120, 80, 40, 0.35) !important;
+  border-color: var(--nimble-loot-active-border) !important;
+  box-shadow: 0 0 0 1px rgba(240, 138, 60, 0.16) inset !important;
+}
+
+.nimble-loot-tab-button,
+.nimble-loot-tabs button,
+.nimble-loot-config [data-action="config-tab"],
+.nimble-loot-config [data-action="editor-tab"] {
+  background: rgba(39, 31, 44, 0.92) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  border-radius: 8px !important;
+}
+
+.nimble-loot-tab-button.active,
+.nimble-loot-tabs button.active,
+.nimble-loot-config [data-action="config-tab"].active,
+.nimble-loot-config [data-action="editor-tab"].active {
+  background: var(--nimble-loot-active) !important;
+  border-color: var(--nimble-loot-active-border) !important;
+}
+
+.nimble-loot-primary,
+.nimble-loot-app button.nimble-loot-primary,
+.nimble-loot-config button.nimble-loot-primary {
+  background: var(--nimble-loot-active) !important;
+  border-color: #e3cba1 !important;
+}
+
+.nimble-loot-currency-portion,
+.nimble-loot-footer,
+.nimble-loot-config .nimble-loot-footer,
+.nimble-loot-config-tabs,
+.nimble-loot-tabs {
+  border-color: var(--nimble-loot-border) !important;
+}
+
+.nimble-loot-config-tabs {
+  background: transparent !important;
+}
+
+.nimble-loot-readonly-field {
+  background: var(--nimble-loot-panel) !important;
+  border-color: var(--nimble-loot-border-strong) !important;
+}
+
+.nimble-loot-app input[type="checkbox"],
+.nimble-loot-config input[type="checkbox"] {
+  background: rgba(39, 31, 44, 0.92) !important;
+  accent-color: #f2a33b;
+}
+
+
+/* v0.1.43: Match Nimble Shop transparency.
+   Previous versions forced .window-content to rgba(0,0,0,.84)!important, so changing CSS variables
+   could not make the app transparent.  Keep the actual window/content shells transparent and let the
+   fieldset-like panels and controls carry the visual weight, like Nimble Shop's GM editor. */
+.nimble-loot-window,
+.nimble-loot-config-window,
+.window-app.nimble-loot-dialog,
+.window-app.nimble-loot-config,
+.application.nimble-loot-dialog,
+.application.nimble-loot-config,
+.nimble-loot-dialog .window-content,
+.nimble-loot-config .window-content,
+.nimble-loot-dialog .window-content > section,
+.nimble-loot-config .window-content > section,
+.nimble-loot-dialog .window-content > div,
+.nimble-loot-config .window-content > div,
+.nimble-loot-svelte-root,
+.nimble-loot-svelte-config-root {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.nimble-loot-app,
+.nimble-loot-config {
+  --nimble-loot-bg: transparent;
+  --nimble-loot-panel: rgba(0, 0, 0, 0.18);
+  --nimble-loot-panel-strong: rgba(0, 0, 0, 0.24);
+  --nimble-loot-input: rgba(39, 31, 44, 0.92);
+  --nimble-loot-border: rgba(255, 255, 255, 0.08);
+  --nimble-loot-border-strong: rgba(227, 203, 161, 0.34);
+}
+
+.nimble-loot-config .nimble-loot-config-scroll,
+.nimble-loot-dialog .nimble-loot-dialog-scroll,
+.nimble-loot-panel,
+.nimble-loot-config-form {
+  background: transparent !important;
+}
+
+.nimble-loot-description,
+.nimble-loot-section,
+.nimble-loot-actions-card,
+.nimble-loot-config-section,
+.nimble-loot-empty,
+.nimble-loot-trap-card,
+.nimble-loot-trigger-box,
+.nimble-loot-status-log,
+.nimble-loot-config-items,
+.nimble-loot-grid-slot,
+.nimble-loot-item-tile,
+.nimble-loot-item-row,
+.nimble-loot-config-item-row {
+  background: var(--nimble-loot-panel) !important;
+  border-color: var(--nimble-loot-border-strong) !important;
+}
+
+.nimble-loot-config-tabs,
+.nimble-loot-tabs,
+.nimble-loot-footer,
+.nimble-loot-config .nimble-loot-footer {
+  background: transparent !important;
+}
+
+
+/* v0.1.44: release cleanup polish. Keep the outer application shell visible like Nimble Shop,
+   while preserving translucent panels. Checked toggles use the same warm Nimble accent. */
+.nimble-loot-dialog .window-content,
+.nimble-loot-config .window-content,
+.nimble-loot-svelte-root,
+.nimble-loot-svelte-config-root {
+  background: rgba(17, 12, 8, 0.80) !important;
+  background-color: rgba(17, 12, 8, 0.80) !important;
+}
+
+.window-app.nimble-loot-dialog,
+.window-app.nimble-loot-config,
+.application.nimble-loot-dialog,
+.application.nimble-loot-config {
+  background: rgba(17, 12, 8, 0.80) !important;
+  background-color: rgba(17, 12, 8, 0.80) !important;
+  border: 1px solid rgba(227, 203, 161, 0.28) !important;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.55) !important;
+}
+
+.nimble-loot-app input[type="checkbox"],
+.nimble-loot-config input[type="checkbox"] {
+  accent-color: #f2a33b !important;
+}
+
+.nimble-loot-app input[type="checkbox"]:checked,
+.nimble-loot-config input[type="checkbox"]:checked {
+  background-color: #f2a33b !important;
+  border-color: #f2a33b !important;
+}
+
+
+/* v0.1.45: final Shop-style shell and checkbox cleanup.
+   Keep the application shell translucency close to the Nimble Shop editor and let native
+   checkbox rendering + accent-color handle the yellow checked state. */
+.window-app.nimble-loot-dialog,
+.window-app.nimble-loot-config,
+.application.nimble-loot-dialog,
+.application.nimble-loot-config {
+  background: rgba(11, 10, 19, 0.70) !important;
+  background-color: rgba(11, 10, 19, 0.70) !important;
+}
+
+.nimble-loot-dialog .window-content,
+.nimble-loot-config .window-content,
+.nimble-loot-svelte-root,
+.nimble-loot-svelte-config-root {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.nimble-loot-app input[type="checkbox"],
+.nimble-loot-config input[type="checkbox"] {
+  appearance: auto !important;
+  -webkit-appearance: auto !important;
+  accent-color: #f2a33b !important;
+  width: 16px !important;
+  height: 16px !important;
+  min-width: 16px !important;
+  min-height: 16px !important;
+  margin: 0 0.35rem 0 0 !important;
+  padding: 0 !important;
+  border: initial !important;
+  outline: initial !important;
+  background: initial !important;
+  background-color: initial !important;
+  box-shadow: none !important;
+}
+
+.nimble-loot-app input[type="checkbox"]:checked,
+.nimble-loot-config input[type="checkbox"]:checked {
+  appearance: auto !important;
+  -webkit-appearance: auto !important;
+  accent-color: #f2a33b !important;
+  background: initial !important;
+  background-color: initial !important;
+  border: initial !important;
+  box-shadow: none !important;
+}
+
+/* v0.1.46: Deterministic Nimble Shop-style checkboxes.
+   Foundry/system checkbox styling was mixing with native accent-color in some clients,
+   producing odd white checks on dark boxes. Draw the box/check ourselves so it matches
+   the Nimble Shop look: dark unchecked square, warm yellow checked square, dark tick. */
+.nimble-loot-app input[type="checkbox"],
+.nimble-loot-config input[type="checkbox"] {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  box-sizing: border-box !important;
+  display: inline-grid !important;
+  place-content: center !important;
+  width: 16px !important;
+  height: 16px !important;
+  min-width: 16px !important;
+  min-height: 16px !important;
+  margin: 0 0.45rem 0 0 !important;
+  padding: 0 !important;
+  border: 1px solid rgba(255,255,255,0.10) !important;
+  border-radius: 2px !important;
+  background: rgba(47, 39, 51, 0.94) !important;
+  background-color: rgba(47, 39, 51, 0.94) !important;
+  box-shadow: none !important;
+  outline: none !important;
+  color: #111016 !important;
+  accent-color: #f2a33b !important;
+  cursor: pointer !important;
+  vertical-align: middle !important;
+}
+
+.nimble-loot-app input[type="checkbox"]::before,
+.nimble-loot-config input[type="checkbox"]::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  transform: scale(0);
+  transition: transform 80ms ease-in-out;
+  transform-origin: center;
+  clip-path: polygon(14% 44%, 0 59%, 39% 100%, 100% 16%, 84% 0, 37% 66%);
+  background: #15120f;
+}
+
+.nimble-loot-app input[type="checkbox"]:checked,
+.nimble-loot-config input[type="checkbox"]:checked {
+  background: #f2a33b !important;
+  background-color: #f2a33b !important;
+  border-color: #f2a33b !important;
+}
+
+.nimble-loot-app input[type="checkbox"]:checked::before,
+.nimble-loot-config input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+.nimble-loot-app input[type="checkbox"]:focus,
+.nimble-loot-config input[type="checkbox"]:focus {
+  box-shadow: 0 0 0 1px rgba(242, 163, 59, 0.35) !important;
+}
+
+.nimble-loot-app input[type="checkbox"]:disabled,
+.nimble-loot-config input[type="checkbox"]:disabled {
+  opacity: 0.55;
+  cursor: not-allowed !important;
+}
+
+
+/* v0.1.47: Final checkbox color correction.
+   Some Foundry/Nimble/native checkbox styling was still inverting the expected colors.
+   Force a deterministic Shop-style checkbox: unchecked = dark square, checked = yellow square
+   with a dark tick. Remove native/background-image rendering entirely. */
+.nimble-loot-app input[type="checkbox"],
+.nimble-loot-config input[type="checkbox"] {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  position: relative !important;
+  box-sizing: border-box !important;
+  display: inline-block !important;
+  width: 16px !important;
+  height: 16px !important;
+  min-width: 16px !important;
+  min-height: 16px !important;
+  margin: 0 0.45rem 0 0 !important;
+  padding: 0 !important;
+  border: 1px solid rgba(255, 255, 255, 0.10) !important;
+  border-radius: 2px !important;
+  background: #302838 !important;
+  background-color: #302838 !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  accent-color: #f2a33b !important;
+  cursor: pointer !important;
+  vertical-align: middle !important;
+}
+
+.nimble-loot-app input[type="checkbox"]::before,
+.nimble-loot-config input[type="checkbox"]::before {
+  content: none !important;
+  display: none !important;
+}
+
+.nimble-loot-app input[type="checkbox"]::after,
+.nimble-loot-config input[type="checkbox"]::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 3px !important;
+  top: 0px !important;
+  width: 8px !important;
+  height: 12px !important;
+  border: solid #17110d !important;
+  border-width: 0 2px 2px 0 !important;
+  transform: rotate(45deg) scale(0) !important;
+  transform-origin: center !important;
+  transition: transform 80ms ease-in-out !important;
+  background: transparent !important;
+  background-image: none !important;
+}
+
+.nimble-loot-app input[type="checkbox"]:checked,
+.nimble-loot-config input[type="checkbox"]:checked {
+  background: #f2a33b !important;
+  background-color: #f2a33b !important;
+  background-image: none !important;
+  border-color: #f2a33b !important;
+}
+
+.nimble-loot-app input[type="checkbox"]:checked::after,
+.nimble-loot-config input[type="checkbox"]:checked::after {
+  transform: rotate(45deg) scale(1) !important;
+}
+
+.nimble-loot-app input[type="checkbox"]:focus,
+.nimble-loot-config input[type="checkbox"]:focus {
+  box-shadow: 0 0 0 1px rgba(242, 163, 59, 0.35) !important;
+}
+
+
+/* v0.1.48: Use a small inline SVG for the checked mark.
+   The prior border-rotated pseudo-element made the checkmark look distorted at Foundry scale.
+   This keeps the Shop-style colors but draws a cleaner tick. */
+.nimble-loot-app input[type="checkbox"],
+.nimble-loot-config input[type="checkbox"] {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  position: relative !important;
+  box-sizing: border-box !important;
+  display: inline-block !important;
+  width: 16px !important;
+  height: 16px !important;
+  min-width: 16px !important;
+  min-height: 16px !important;
+  margin: 0 0.45rem 0 0 !important;
+  padding: 0 !important;
+  border: 1px solid rgba(255, 255, 255, 0.10) !important;
+  border-radius: 2px !important;
+  background-color: #302838 !important;
+  background-image: none !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 12px 12px !important;
+  box-shadow: none !important;
+  outline: none !important;
+  accent-color: #f2a33b !important;
+  cursor: pointer !important;
+  vertical-align: middle !important;
+}
+
+.nimble-loot-app input[type="checkbox"]::before,
+.nimble-loot-config input[type="checkbox"]::before,
+.nimble-loot-app input[type="checkbox"]::after,
+.nimble-loot-config input[type="checkbox"]::after {
+  content: none !important;
+  display: none !important;
+}
+
+.nimble-loot-app input[type="checkbox"]:checked,
+.nimble-loot-config input[type="checkbox"]:checked {
+  background-color: #f2a33b !important;
+  border-color: #f2a33b !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3.25 8.15 6.45 11.25 12.85 4.55' fill='none' stroke='%2317110d' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
+}
+
+.nimble-loot-app input[type="checkbox"]:focus,
+.nimble-loot-config input[type="checkbox"]:focus {
+  box-shadow: 0 0 0 1px rgba(242, 163, 59, 0.35) !important;
+}
+
+
+/* v0.1.50-rc3: compact currency amount dialogs */
+.nimble-loot-currency-dialog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 5.25rem);
+  gap: 0.5rem;
+  align-items: end;
+}
+
+.nimble-loot-currency-dialog-grid label {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.nimble-loot-currency-dialog-grid input[type="number"] {
+  width: 5.25rem;
+  min-width: 5.25rem;
+}
+
+/* v0.1.50-rc7: three-column access layout without disarm toggle. */
+.nimble-loot-access-grid-v4 {
+  display: grid;
+  grid-template-columns: minmax(10rem, 0.9fr) minmax(0, 1fr) minmax(0, 1fr);
+  gap: 0.55rem 0.75rem;
+  align-items: end;
+}
+
+.nimble-loot-access-grid-v4 input[name="keyCode"] {
+  height: 2.15rem;
+  min-height: 2.15rem;
+}
+
+@media (max-width: 900px) {
+  .nimble-loot-access-grid-v4 {
+    grid-template-columns: 1fr;
+  }
+}

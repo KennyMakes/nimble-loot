@@ -1,0 +1,102 @@
+[
+  {
+    "source": "src/loot/constants.js",
+    "banner": "// === Nimble Loot: constants ==="
+  },
+  {
+    "source": "src/loot/logger.js",
+    "banner": "// === Nimble Loot: logger ==="
+  },
+  {
+    "source": "src/loot/settings.js",
+    "banner": "// === Nimble Loot: settings ==="
+  },
+  {
+    "source": "src/loot/data/defaults.js",
+    "banner": "// === Nimble Loot: defaults ==="
+  },
+  {
+    "source": "src/loot/data/migration.js",
+    "banner": "// === Nimble Loot: migration ==="
+  },
+  {
+    "source": "src/loot/data/validation.js",
+    "banner": "// === Nimble Loot: validation ==="
+  },
+  {
+    "source": "src/loot/data/flags.js",
+    "banner": "// === Nimble Loot: flags ==="
+  },
+  {
+    "source": "src/loot/helpers/formatting.js",
+    "banner": "// === Nimble Loot: formatting helpers ==="
+  },
+  {
+    "source": "src/loot/svelte/svelteApplicationMixin.js",
+    "banner": "// === Nimble Loot: Svelte-compatible application mixin ==="
+  },
+  {
+    "source": "src/loot/services/actorResolver.js",
+    "banner": "// === Nimble Loot: actor resolver ==="
+  },
+  {
+    "source": "src/loot/services/currencyService.js",
+    "banner": "// === Nimble Loot: currency service ==="
+  },
+  {
+    "source": "src/loot/services/inventoryService.js",
+    "banner": "// === Nimble Loot: inventory service ==="
+  },
+  {
+    "source": "src/loot/services/rollService.js",
+    "banner": "// === Nimble Loot: roll service ==="
+  },
+  {
+    "source": "src/loot/services/trapService.js",
+    "banner": "// === Nimble Loot: trap service ==="
+  },
+  {
+    "source": "src/loot/services/accessService.js",
+    "banner": "// === Nimble Loot: access service ==="
+  },
+  {
+    "source": "src/loot/services/transferService.js",
+    "banner": "// === Nimble Loot: transfer service ==="
+  },
+  {
+    "source": "src/loot/services/socketService.js",
+    "banner": "// === Nimble Loot: socket service ==="
+  },
+  {
+    "source": "src/loot/apps/lootDialog.js",
+    "banner": "// === Nimble Loot: player dialog ==="
+  },
+  {
+    "source": "src/loot/apps/lootConfigDialog.js",
+    "banner": "// === Nimble Loot: GM config dialog ==="
+  },
+  {
+    "source": "src/loot/services/dropService.js",
+    "banner": "// === Nimble Loot: canvas item drop service ==="
+  },
+  {
+    "source": "src/loot/services/interactionService.js",
+    "banner": "// === Nimble Loot: interaction service ==="
+  },
+  {
+    "source": "src/loot/services/highlightService.js",
+    "banner": "// === Nimble Loot: token highlight service ==="
+  },
+  {
+    "source": "src/loot/api/lootApi.js",
+    "banner": "// === Nimble Loot: public API ==="
+  },
+  {
+    "source": "src/loot/index.js",
+    "banner": "// === Nimble Loot: feature registration ==="
+  },
+  {
+    "source": "src/init.js",
+    "banner": "// === Nimble Loot: entry ==="
+  }
+]

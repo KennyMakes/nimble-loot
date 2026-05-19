@@ -1,0 +1,10 @@
+{
+  "name": "nimble-loot",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build-init.mjs",
+    "syntax:check": "node --check scripts/init.js"
+  },
+  "version": "0.2.1"
+}
